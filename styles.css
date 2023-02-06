@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+*{
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+h3, h4{
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+h1{
+    justify-self: flex-start;
+}
+
+body{
+    margin: 0;
+    background-image: url('imgs/547224-landscape-wallpaper.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.topbar{
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+    background-color: #343434;
+}
+
+.navbar{
+    display: flex;
+    justify-self: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.navbar a{
+    display: inline-block;
+    width: 200px;
+}
+
+.navbar .about:hover \ .navbar .dropdown-about{
+    display: block;
+}
+
+.navbar .dropdown-about{
+    background-color: #343434;
+    width: 112.167px;
+    position: fixed;
+    top: 82.4px;
+    display: none;
+}
+
+.navbar .dropdown-about a{
+    width: 100%;
+}
+
+.navbar a{
+    font-size: 23px;
+    text-decoration: none;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    padding: 1.2vw;
+    align-self: center;
+}
+
+.search input, .searchbttn{
+    background-color: #CACACA;
+    border: 0px;
+    color: black;
+}
+
+.search input{
+    width: 200px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.searchbttn{
+    display: inline-block;
+    height: 26px;
+    width: 70px;
+    text-align: center;
+}
+
+h1, .navbar, .search{
+    width: 33.33%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main{
+    background-color: #6D9886;
+    font-size: 20px;
+    padding: 15px 30px;
+    width: 60%;
+    text-align: center;
+    margin: 10vh 0 0 0;
+}
+
+.panel{
+    display: inline-block;
+    width: 19%;
+    max-width: 20%;
+}
+
+.panels .panel img{
+    width: 40px;
+    height: auto;
+}
+
+.panels a {
+    text-decoration: none;
+}
+
+.panels a .panel:hover{
+    background-color: #5b8171;
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+}
+
+#programms table{
+    width: 100%;
+}
+
+#programms table tr td{
+
+    width: 20%;
+    height: auto;
+}
+
+#programms img{
+    width: 40px;
+    height: auto;
+}
+
+.list table{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.list table, .list table  td, th{
+    border: 2px solid white;
+    border-collapse: collapse;
+}
+
+.list thead tr th{
+    width: 25%;
+    padding: 0.7vw;
+}
+.list tbody tr td{
+    width: 25%;
+    padding: 0.7vw;
+}
+
+.footer{
+    background-color: #343434;
+    width: 100%;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
