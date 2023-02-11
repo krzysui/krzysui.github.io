@@ -158,8 +158,12 @@ body{
     width: 100%;
 }
 
-.projects .myprojects tr th{
+.projects .myprojects tr{
     width: 20%;
+}
+
+.projects .myprojects tr:nth-child(even) {
+  background-color: #537365;
 }
 
 .footer{
