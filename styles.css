@@ -1,177 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@font-face {
+    font-family: "cabin";
+    src: url("font/cabin.ttf");
+}
 
 *{
-    font-family: 'Lato', sans-serif;
-    color: white;
-    text-decoration: none;
+    font-family: cabin;
+    font-weight: 100;
+}
+
+.malpa{
+    font-family: verdana;
 }
 
 body{
     margin: 0;
+    background-color: #bebebe;
+}
+
+.top{
     background-color: black;
-    background-image: url('imgs/bg.gif');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.panels .panel img, .programs-list tr td img{
-    width: auto;
-    height: 40px;
-}
-
-.topbar{
-    background-color: #343434;
+    color: white;
+    height: 50px;
     display: flex;
     align-items: center;
-    padding: 0 2vw;
+    padding: 20px;
+    justify-content: flex-end;
 }
 
-
-
-.topbar .title{
-    width: 25%;
-}
-
-.topbar .navbar{
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-}
-
-.topbar .navbar a{
-    width: 25%;
-    text-align: center;
-    font-size: 1.5em;
-}
-
-@media screen and (max-width: 852px){
-    .topbar{
-        background-color: #343434;
-        padding: 0 2vw;
-        display: block;
-        text-align: center;
-    }
-
-    .topbar .title{
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-
-    .topbar .title h1{
-        margin-top: 0;
-    }
-
-    .topbar .navbar{
-        display: block;
-        width: 100%;
-    }
-
-    .topbar .navbar a{
-        width: 100%;
-        display: block;
-        padding: 1.5% 0;
-    }
-
-    .navbar .a .link{
-        width: 100%;
-    }
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-}
-
-.main{
-    background-color: #6D9886;
-    text-align: center;
-    width: 65%;
-    margin-top: 115px;
-    padding: 2vw;
-}
-
-.main .languages, .main .programms, .main .links{
-    width: 100%;
-}
-
-.main .languages .panels, .main .programms .panels, .main .links .panels{
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.top h1{
+    text-align: right;
     margin: 0;
 }
 
-.panels .panel{
-    width: 20%;
+.main{
+    padding: 20px;
 }
 
-.links .panels .panel{
-    width: 50%;
+.main .portfolio .lista{
+    display: flex;
+    align-items: center;
 }
 
-@media screen and (max-width: 1053px){
-    .panels .panel{
-        width: 33.33%;
-    }
-    .links .panels .panel{
-        width: 100%;
-    }
-    
+.main .portfolio .lista a{
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
 }
 
-@media screen and (max-width: 630px){
-    .panels .panel{
-        width: 100%;
-    }
-    .links .panels .panel{
-        width: 100%;
-    }
-    
+.main .portfolio .lista a .element{
+    display: inline-block;
+    text-align: center;
 }
 
-
-
-.projects .search{
-    margin-bottom: 40px;
+@keyframes color{
+    from {background-color: none;}
+    to {background-color: #a1a1a1;;}
 }
 
-.projects .search input{
-    background-color: #343434;
-    border: 0px;
-    width: 200px;
-    height: 25px;
+.main .portfolio .lista a .element:hover{
+    animation-name: color;
+    animation-duration: 0.5s;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
 }
 
-@media screen and (max-width: 852px){
-    .projects .search input{
-        width: 150px;
-        height: 19.75px;
-    }
+.main .portfolio .lista a .element img{
+    width: 300px;
 }
 
-.projects .myprojects{
-    width: 100%;
+.main .kontakt ul{
+    font-size: 20px;
 }
 
-.projects .myprojects tr{
-    width: 20%;
+.main .kontakt ul li{
+    margin: 0px 0px 10px 0px;
 }
 
-.projects .myprojects tr:nth-child(even) {
-  background-color: #537365;
+.main .linki a{
+    font-size: 20px;
+}
+
+.main .linki ul li{
+    margin: 0px 0px 10px 0px;
+}
+
+.main .linki ul li a{
+    color: black;
 }
 
 .footer{
-    width: 100%;
-    background-color: #343434;
-    height: 50px;
+    background-color: black;
+    color: white;
+    height: 30px;
     display: flex;
-    text-align: center;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    padding-right: 20px;
+    position: fixed;
+    width: calc(100% - 20px);
+    left: 0;
+    bottom: 0;
+}
+.footer h4{
+    margin: 0;
 }
