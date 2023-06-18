@@ -8,165 +8,47 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="topbar">
-        <div class="title">
-            <h1>Krzysztof Włostowski</h1>
-        </div>
-        <div class="navbar">
-            <a href="#">
-                <div class="link">
-                    About me
-                </div>
-            </a>
-            <a href="#">
-                <div class="link">
-                    Links
-                </div>
-            </a>
-            <a href="#">
-                <div class="link">
-                    My Work
-                </div>
-            </a>
-            <a href="#">
-                <div class="link">
-                    Credits
-                </div>
-            </a>
-        </div>
+    <div class="top">
+        <h1>Krzysztof Włostowski</h1>
     </div>
-    <div class="container">    
-        <div class="main">
-            <div class="about">
-                <h2>About me:</h2>
-                <p>I'm a <span id="age">17</span> years old high-school student from Poland. I enjoy programming, love music and cooking. I'm trying to be independent when it comes to my projects. I make songs for my project. I shoot and edit photos and videos that I later use in them.</p>
-            </div> 
-            <hr>
-            <div class="languages">
-                <h3>Languages i knows</h3>
-                <div class="panels">
-                    <div class="panel">
-                        <img src="imgs/html.png" alt="HTML Logo">
-                        <h4>HTML</h4>
+    <div class="main">
+        <div class="portfolio">
+            <h2>Moje Portfolio</h2>
+            <div class="lista">
+                <a href="https://krzysui.github.io/nether-calculator/" target="_blank">
+                    <div class="element">
+                        <img src="zdjecia/nether showcase.png" alt="zdjęcie pokazowe">
+                        <h3>Nether Calculator</h3>
+                        <p>Narzędzie dla graczy minecraft</p>
                     </div>
-                    <div class="panel">
-                        <img src="imgs/css.png" alt="CSS Logo">
-                        <h4>CSS</h4>
+                </a>
+                <a href="" target="_blank">
+                    <div class="element">
+                        <img src="zdjecia/soon.png" alt="zdjęcie pokazowe">
+                        <h3>Wkrótce</h3>
+                        <p> Wkrótce</p>
                     </div>
-                    <div class="panel">
-                        <img src="imgs/javascript.png" alt="JavaScript Logo">
-                        <h4>JavaScript</h4>
-                    </div>
-                    <div class="panel">
-                        <img src="imgs/php.png" alt="PHP Logo">
-                        <h4>PHP</h4>
-                    </div>
-                    <div class="panel">
-                        <img src="imgs/sql.png" alt="SQL Logo">
-                        <h4>SQL</h4>
-                    </div>
-                </div>
+                </a>
             </div>
-            <hr>
-            <div class="programms">
-                <h3>What do I use</h3>
-                <div class="panels">
-                    <div class="panel">
-                        <h3>Graphics:</h3>
-                        <img src="imgs/photoshop.png" alt="">
-                        <h4>Photoshop</h4>
-                        <img src="imgs/illustrator.png" alt="">
-                        <h4>Illustrator</h4>                      
-                    </div>
-                    <div class="panel">
-                        <h3>Video:</h3>
-                        <img src="imgs/premiere.png" alt="">
-                        <h4>Premiere Pro</h4>
-                        <img src="imgs/filmora.png" alt="">
-                        <h4>Filmora</h4>                      
-                    </div>
-                    <div class="panel">
-                        <h3>Audio:</h3>
-                        <img src="imgs/fl.png" alt="">
-                        <h4>FL Studio</h4>
-                        <img src="imgs/audacity.png" alt="">
-                        <h4>Audacity</h4>                      
-                    </div>
-                    <div class="panel">
-                        <h3>Programming:</h3>
-                        <img src="imgs/code.png" alt="">
-                        <h4>Visual Studio Code</h4>
-                        <img src="imgs/xampp.png" alt="">
-                        <h4>XAMPP</h4>                      
-                    </div>
-                    <div class="panel">
-                        <h3>Other:</h3>
-                        <img src="imgs/obs.png" alt="">
-                        <h4>OBS Studio</h4>
-                        <img style="height: 40px; width: auto;" src="imgs/docs.png" alt="">
-                        <h4>Google Docs</h4>                      
-                    </div>
-                </div>
-            </div>
-            <div class="links">
-                <h2>Links</h2>
-                <div class="panels">
-                    <div class="panel">
-                        <a href="#">
-                            <div class="image">
-                                <img src="imgs/discord.png" alt="Discord">
-                            </div>
-                            <h4>qrzch#4876</h4>
-                        </a>
-                    </div>                   
-                    <div class="panel">
-                        <a href="https://github.com/krzysui"></a>
-                            <img src="imgs/github.png" alt="GitHub">
-                            <h4>krzysui</h4>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="projects">
-                <h2>My Work</h2>
-                <div class="search">
-                    <input type="text" id="searchbar" class="searchbar">
-                </div>
-                <table id="myprojects" class="myprojects">
-                    <tr>
-                        <th>Name</th>
-                        <th>Type</th>
-                        <th>Size</th>
-                        <th>Description</th>
-                        <th>Action</th>
-                    </tr>
-                    <tr>
-                        <td>Nether Calculator</td>
-                        <td>Website</td>
-                        <td>-</td>
-                        <td>Calculate coordinates in Minecraft Nether</td>
-                        <td><a style="text-decoration: underline;" href="https://krzysui.github.io/nether-calculator/">Visit</a></td>
-                    </tr>
-                    <tr>
-                        <td>Video Splicer</td>
-                        <td>Application</td>
-                        <td>~53MB</td>
-                        <td>Select time duration and slice video into equal parts(in Polish/English Comming Soon).</td>
-                        <td><a style="text-decoration: underline;" href="https://www.mediafire.com/file/kd3l491nw319wru/VideoSlicer.exe/file">Download</a></td>
-                    </tr>
-                </table>
-            </div>
+        </div>
+        <div class="kontakt">
+            <h2>Skontaktuj się ze mną</h2>
+            <ul>
+                <li>575 353 042</li>
+                <li>wlostowski.k.22<span class="malpa">@</span>gmail.com</li>
+            </ul>
+        </div>
+        <div class="linki">
+            <h2>Linki</h2>
+            <ul>
+                <li><a href="https://github.com/krzysui">Github</a></li>
+                <li><a href="https://www.facebook.com/qrzychuu/">Facebook</a></li>
+                <li><a href="">Linkedin</a></li>
+            </ul>
         </div>
     </div>
     <div class="footer">
-        <div class="feet">
-            designed and written by <a style="text-decoration: underline;" href="https://github.com/krzysui">krzysui.</a> <span id="credits" class="credits"></span>.    
-        </div>
-    </div>    
+        <span>designed and made by krzysztof włostowski</span>
+    </div>
 </body>
-<script>
-    var date = new Date();
-    year = date.getFullYear()
-    document.getElementById('credits').innerHTML = year;
-</script>
 </html>
